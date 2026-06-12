@@ -38,9 +38,10 @@ function applyFilters() {
   const cuisine = $("#cuisine").value;
   const price = $("#price").value;
   const rating = $("#rating").value;
+  const year = $("#year").value;
   state.filtered = state.restaurants.filter((item) => {
     const haystack = [item.name, item.branch, item.address, item.cuisine, item.review, ...(item.recommendedDishes || [])].join(" ").toLowerCase();
-    return (!query || haystack.includes(query)) && (!district || item.district === district) && (!cuisine || item.cuisine === cuisine) && matchesPrice(item.pricePerPerson, price) && (!rating || (item.rating || "unknown") === rating);
+    return (!query || haystack.includes(query)) && (!district || item.district === district) && (!cuisine || item.cuisine === cuisine) && matchesPrice(item.pricePerPerson, price) && (!rating || (item.rating || "unknown") === rating) && (!year || (item.visitDate || "").startsWith(year));
   });
   renderList();
   renderMarkers();
@@ -109,8 +110,9 @@ async function main() {
     await loadData();
     populateSelect("#district", state.restaurants.map((item) => item.district));
     populateSelect("#cuisine", state.restaurants.map((item) => item.cuisine));
-    ["#search", "#district", "#cuisine", "#price", "#rating"].forEach((id) => $(id).addEventListener(id === "#search" ? "input" : "change", applyFilters));
-    $("#reset").addEventListener("click", () => { $("#search").value = ""; ["#district", "#cuisine", "#price", "#rating"].forEach((id) => $(id).value = ""); applyFilters(); });
+    populateSelect("#year", state.restaurants.map((item) => (item.visitDate || "").slice(0, 4)));
+    ["#search", "#district", "#cuisine", "#price", "#rating", "#year"].forEach((id) => $(id).addEventListener(id === "#search" ? "input" : "change", applyFilters));
+    $("#reset").addEventListener("click", () => { $("#search").value = ""; ["#district", "#cuisine", "#price", "#rating", "#year"].forEach((id) => $(id).value = ""); applyFilters(); });
     $(".dialog-close").addEventListener("click", () => $("#details").close());
     $("#mobile-toggle").addEventListener("click", () => { document.body.classList.toggle("list-open"); $("#mobile-toggle").textContent = document.body.classList.contains("list-open") ? "查看地图" : "查看列表"; });
     applyFilters();

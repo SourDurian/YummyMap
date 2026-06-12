@@ -29,6 +29,8 @@ input, select { width: 100%; padding: 10px 11px; color: var(--ink); background: 
 .filter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 button { cursor: pointer; }
 .secondary { margin-top: 12px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--muted); }
+.filter-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.download { display: inline-block; text-decoration: none; font-size: 12px; font-weight: 700; }
 .status { padding: 0 18px; }
 .empty { margin: 22px 0; padding: 18px; border: 1px dashed var(--line); border-radius: 12px; color: var(--muted); line-height: 1.7; }
 .restaurant-list { display: grid; }

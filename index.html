@@ -32,8 +32,13 @@
           <label>菜系<select id="cuisine"><option value="">全部菜系</option></select></label>
           <label>人均<select id="price"><option value="">全部价格</option><option value="0-49">¥0–49</option><option value="50-99">¥50–99</option><option value="100-199">¥100–199</option><option value="200+">¥200+</option><option value="unknown">价格未知</option></select></label>
           <label>推荐<select id="rating"><option value="">全部评价</option><option value="recommended">推荐</option><option value="mixed">有褒有贬</option><option value="not_recommended">不推荐</option><option value="unknown">待整理</option></select></label>
+          <label>年份<select id="year"><option value="">全部年份</option></select></label>
         </div>
-        <button id="reset" class="secondary" type="button">清除筛选</button>
+        <div class="filter-actions">
+          <button id="reset" class="secondary" type="button">清除筛选</button>
+          <a class="secondary download" href="./data/restaurants.csv" download>下载 CSV</a>
+          <a class="secondary download" href="./data/restaurants.geojson" download>下载 GeoJSON</a>
+        </div>
       </section>
       <section id="status" class="status" aria-live="polite"></section>
       <section id="restaurant-list" class="restaurant-list"></section>
