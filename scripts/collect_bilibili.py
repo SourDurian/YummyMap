@@ -125,16 +125,21 @@ def iso_date(info):
 def main():
     parser = argparse.ArgumentParser(description="获取员外的觅食人生视频清单并生成复核队列")
     parser.add_argument("--limit", type=int, default=0, help="仅处理最新 N 条；0 表示全部")
+    parser.add_argument("--batch-size", type=int, default=20, help="每次最多新增的复核条目数，降低触发风控的概率")
     parser.add_argument("--cookies-from-browser", choices=["chrome", "edge", "firefox"], help="使用已登录浏览器的 B 站会话")
     args = parser.parse_args()
     CACHE.mkdir(parents=True, exist_ok=True)
     existing = load_existing()
-    entries = list_videos(args.limit)
+    requested_limit = args.limit or max(args.batch_size + len(existing), args.batch_size)
+    entries = list_videos(requested_limit)
     rows = dict(existing)
+    added = 0
     for index, entry in enumerate(entries, 1):
         bvid = entry.get("id", "")
         if not bvid or bvid in rows:
             continue
+        if args.batch_size and added >= args.batch_size:
+            break
         url = entry.get("url") or f"https://www.bilibili.com/video/{bvid}"
         info, error = video_metadata(bvid, url, args.cookies_from_browser)
         if info:
@@ -142,6 +147,7 @@ def main():
             (CACHE / f"{bvid}.json").write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")
         else:
             rows[bvid] = {"bvid": bvid, "title": "", "published_at": "", "video_url": url, "description": "", "status": "元数据受限", "notes": error}
+        added += 1
         print(f"[{index}/{len(entries)}] {bvid}: {rows[bvid]['status']}")
     QUEUE.parent.mkdir(parents=True, exist_ok=True)
     with QUEUE.open("w", encoding="utf-8-sig", newline="") as handle:
