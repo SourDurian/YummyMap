@@ -49,3 +49,7 @@ python scripts/export_data.py
 4. 推送到 `main`，工作流会验证数据、生成导出文件并发布到 `https://sourdurian.github.io/YummyMap/`。
 
 密钥只在部署构建阶段写入发布产物，不提交到 Git 仓库。Web 端地图 Key 最终仍会被浏览器读取，因此必须在高德控制台配置域名白名单。
+
+## 地理编码
+
+在 Actions Secrets 中配置 `AMAP_WEB_SERVICE_KEY` 后，手动运行 `Geocode restaurant addresses` 工作流。工作流只处理缺少坐标的餐厅，确认结果位于武汉范围内后更新 JSON、CSV 和 GeoJSON，并自动触发 Pages 重新部署。
