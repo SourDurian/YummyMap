@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13",
+  "generatedAt": "2026-06-12",
   "source": "https://space.bilibili.com/9433848/upload/video",
   "restaurants": [
     {
@@ -12,11 +12,16 @@
       "pricePerPerson": 78,
       "rating": "mixed",
       "review": "多数菜品评价正面，口味较川菜更柔和、贴近武汉社区口味；凤爪肉偏少。店内只有一位厨师，出餐较慢，招牌菜也可能较早售罄。",
-      "recommendedDishes": ["回锅肉", "蹄花烧凤爪", "干烧小黄鱼", "上汤苋菜"],
+      "recommendedDishes": [
+        "回锅肉",
+        "蹄花烧凤爪",
+        "干烧小黄鱼",
+        "上汤苋菜"
+      ],
       "visitDate": "2026-06-10",
       "videoUrl": "https://www.bilibili.com/video/BV1APES6bErr",
-      "longitude": null,
-      "latitude": null,
+      "longitude": 114.274198,
+      "latitude": 30.632048,
       "verificationStatus": "简介与视频口播已复核",
       "updatedAt": "2026-06-12"
     },
@@ -30,11 +35,16 @@
       "pricePerPerson": 288,
       "rating": "mixed",
       "review": "当餐整体评价非常棒，炭火料理风味和烤鸡出品尤其突出。博主强烈提醒客多时可能出现出品与服务问题，并指出当日服务人手不足、卫生间维护不理想；建议控制在人均约200元点餐。",
-      "recommendedDishes": ["炭烤鸡皮紫苏爆香", "烤牛舌", "炭烤黄鱼", "烤鸡黑松露蘑菇烩饭"],
+      "recommendedDishes": [
+        "炭烤鸡皮紫苏爆香",
+        "烤牛舌",
+        "炭烤黄鱼",
+        "烤鸡黑松露蘑菇烩饭"
+      ],
       "visitDate": "2026-06-07",
       "videoUrl": "https://www.bilibili.com/video/BV1sgEH6DEgZ",
-      "longitude": null,
-      "latitude": null,
+      "longitude": 114.363381,
+      "latitude": 30.598309,
       "verificationStatus": "简介与视频口播已复核",
       "updatedAt": "2026-06-12"
     },
@@ -48,13 +58,18 @@
       "pricePerPerson": 36,
       "rating": "recommended",
       "review": "面线糊又香又滑，浇头选择丰富且多数表现出色，整体基本不踩雷；本次猪肺口感偏老。面线糊5元起且可续，浇头另计。",
-      "recommendedDishes": ["面线糊", "粉肠", "五香卷", "芋泥卷"],
+      "recommendedDishes": [
+        "面线糊",
+        "粉肠",
+        "五香卷",
+        "芋泥卷"
+      ],
       "visitDate": "2024-12-26",
       "videoUrl": "https://www.bilibili.com/video/BV1uaCaYWEGu",
-      "longitude": null,
-      "latitude": null,
+      "longitude": 114.405969,
+      "latitude": 30.503535,
       "verificationStatus": "简介与视频口播已复核",
-      "updatedAt": "2026-06-13"
+      "updatedAt": "2026-06-12"
     },
     {
       "id": "le-jardin-1911",
@@ -66,13 +81,18 @@
       "pricePerPerson": 240,
       "rating": "recommended",
       "review": "双人套餐332元，份量充足；另点法式青口148元，本次两人合计约480元。菲力牛排、鹅肝和海鲜烩饭评价突出，整体被明确推荐。周一、周二休息，注意避免跑空。",
-      "recommendedDishes": ["菲力牛排", "鹅肝", "法式青口", "西班牙海鲜烩饭"],
+      "recommendedDishes": [
+        "菲力牛排",
+        "鹅肝",
+        "法式青口",
+        "西班牙海鲜烩饭"
+      ],
       "visitDate": "2024-11-15",
       "videoUrl": "https://www.bilibili.com/video/BV1esmSYdEmL",
-      "longitude": null,
-      "latitude": null,
+      "longitude": 114.262811,
+      "latitude": 30.615241,
       "verificationStatus": "简介与视频口播已复核",
-      "updatedAt": "2026-06-13"
+      "updatedAt": "2026-06-12"
     }
   ]
 }

@@ -1,4 +1,129 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.274198,
+          30.632048
+        ]
+      },
+      "properties": {
+        "id": "linhong-chuancai-meiliancheng",
+        "name": "林红川菜馆",
+        "branch": "美联城观店",
+        "address": "武汉市江岸区城中村改造K4地块2号商业1层商6室",
+        "district": "江岸区",
+        "cuisine": "川菜",
+        "pricePerPerson": 78,
+        "rating": "mixed",
+        "review": "多数菜品评价正面，口味较川菜更柔和、贴近武汉社区口味；凤爪肉偏少。店内只有一位厨师，出餐较慢，招牌菜也可能较早售罄。",
+        "recommendedDishes": [
+          "回锅肉",
+          "蹄花烧凤爪",
+          "干烧小黄鱼",
+          "上汤苋菜"
+        ],
+        "visitDate": "2026-06-10",
+        "videoUrl": "https://www.bilibili.com/video/BV1APES6bErr",
+        "verificationStatus": "简介与视频口播已复核",
+        "updatedAt": "2026-06-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.363381,
+          30.598309
+        ]
+      },
+      "properties": {
+        "id": "reson-charcoal-restaurant",
+        "name": "炙响RESON·炭火料理餐厅",
+        "branch": "东方里店",
+        "address": "武汉市洪山区欢乐大道168号东方里商业街S1栋1层1-4号",
+        "district": "洪山区",
+        "cuisine": "西餐",
+        "pricePerPerson": 288,
+        "rating": "mixed",
+        "review": "当餐整体评价非常棒，炭火料理风味和烤鸡出品尤其突出。博主强烈提醒客多时可能出现出品与服务问题，并指出当日服务人手不足、卫生间维护不理想；建议控制在人均约200元点餐。",
+        "recommendedDishes": [
+          "炭烤鸡皮紫苏爆香",
+          "烤牛舌",
+          "炭烤黄鱼",
+          "烤鸡黑松露蘑菇烩饭"
+        ],
+        "visitDate": "2026-06-07",
+        "videoUrl": "https://www.bilibili.com/video/BV1sgEH6DEgZ",
+        "verificationStatus": "简介与视频口播已复核",
+        "updatedAt": "2026-06-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.405969,
+          30.503535
+        ]
+      },
+      "properties": {
+        "id": "amei-quanzhou-mianxianhu",
+        "name": "阿美泉州面线糊",
+        "branch": "瑜樾东方店",
+        "address": "武汉市光谷街瑜樾东方1层1-116号",
+        "district": "洪山区",
+        "cuisine": "闽南小吃",
+        "pricePerPerson": 36,
+        "rating": "recommended",
+        "review": "面线糊又香又滑，浇头选择丰富且多数表现出色，整体基本不踩雷；本次猪肺口感偏老。面线糊5元起且可续，浇头另计。",
+        "recommendedDishes": [
+          "面线糊",
+          "粉肠",
+          "五香卷",
+          "芋泥卷"
+        ],
+        "visitDate": "2024-12-26",
+        "videoUrl": "https://www.bilibili.com/video/BV1uaCaYWEGu",
+        "verificationStatus": "简介与视频口播已复核",
+        "updatedAt": "2026-06-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.262811,
+          30.615241
+        ]
+      },
+      "properties": {
+        "id": "le-jardin-1911",
+        "name": "乐花园LeJardin法式主题餐厅",
+        "branch": "大武汉1911店",
+        "address": "武汉市江汉区新华路大武汉1911风情街B栋",
+        "district": "江汉区",
+        "cuisine": "法餐",
+        "pricePerPerson": 240,
+        "rating": "recommended",
+        "review": "双人套餐332元，份量充足；另点法式青口148元，本次两人合计约480元。菲力牛排、鹅肝和海鲜烩饭评价突出，整体被明确推荐。周一、周二休息，注意避免跑空。",
+        "recommendedDishes": [
+          "菲力牛排",
+          "鹅肝",
+          "法式青口",
+          "西班牙海鲜烩饭"
+        ],
+        "visitDate": "2024-11-15",
+        "videoUrl": "https://www.bilibili.com/video/BV1esmSYdEmL",
+        "verificationStatus": "简介与视频口播已复核",
+        "updatedAt": "2026-06-12"
+      }
+    }
+  ]
 }
