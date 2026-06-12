@@ -1,5 +1,42 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-06-12",
   "source": "https://space.bilibili.com/9433848/upload/video",
-  "restaurants": []
+  "restaurants": [
+    {
+      "id": "linhong-chuancai-meiliancheng",
+      "name": "林红川菜馆",
+      "branch": "美联城观店",
+      "address": "武汉市江岸区城中村改造K4地块2号商业1层商6室",
+      "district": "江岸区",
+      "cuisine": "川菜",
+      "pricePerPerson": null,
+      "rating": "unknown",
+      "review": "视频评价待人工整理。",
+      "recommendedDishes": [],
+      "visitDate": "2026-06-10",
+      "videoUrl": "https://www.bilibili.com/video/BV1APES6bErr",
+      "longitude": null,
+      "latitude": null,
+      "verificationStatus": "简介已核对，价格与评价待复核",
+      "updatedAt": "2026-06-12"
+    },
+    {
+      "id": "reson-charcoal-restaurant",
+      "name": "炙响RESON·炭火料理餐厅",
+      "branch": "东方里店",
+      "address": "武汉市洪山区欢乐大道168号东方里商业街S1栋1层1-4号",
+      "district": "洪山区",
+      "cuisine": "西餐",
+      "pricePerPerson": null,
+      "rating": "unknown",
+      "review": "视频评价待人工整理。",
+      "recommendedDishes": [],
+      "visitDate": "2026-06-07",
+      "videoUrl": "https://www.bilibili.com/video/BV1sgEH6DEgZ",
+      "longitude": null,
+      "latitude": null,
+      "verificationStatus": "简介已核对，价格与评价待复核",
+      "updatedAt": "2026-06-12"
+    }
+  ]
 }
