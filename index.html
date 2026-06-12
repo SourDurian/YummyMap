@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="员外的觅食人生武汉探店地图">
+  <title>YummyMap 武汉觅食地图</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">员外的觅食人生 · 武汉探店索引</p>
+      <h1>YummyMap</h1>
+      <p>把视频里的店，放回武汉的街巷里。</p>
+    </div>
+    <div class="hero-meta">
+      <strong id="result-count">0</strong>
+      <span>家餐厅</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" aria-label="餐厅筛选与列表">
+      <section class="filters">
+        <label class="search">
+          <span>搜索</span>
+          <input id="search" type="search" placeholder="店名、地址、菜品或评价">
+        </label>
+        <div class="filter-grid">
+          <label>区域<select id="district"><option value="">全部区域</option></select></label>
+          <label>菜系<select id="cuisine"><option value="">全部菜系</option></select></label>
+          <label>人均<select id="price"><option value="">全部价格</option><option value="0-49">¥0–49</option><option value="50-99">¥50–99</option><option value="100-199">¥100–199</option><option value="200+">¥200+</option><option value="unknown">价格未知</option></select></label>
+          <label>推荐<select id="rating"><option value="">全部评价</option><option value="recommended">推荐</option><option value="mixed">有褒有贬</option><option value="not_recommended">不推荐</option><option value="unknown">待整理</option></select></label>
+        </div>
+        <button id="reset" class="secondary" type="button">清除筛选</button>
+      </section>
+      <section id="status" class="status" aria-live="polite"></section>
+      <section id="restaurant-list" class="restaurant-list"></section>
+    </aside>
+
+    <section class="map-panel">
+      <div id="map" aria-label="武汉餐厅地图"></div>
+      <div id="map-message" class="map-message" hidden></div>
+      <button id="mobile-toggle" class="mobile-toggle" type="button">查看列表</button>
+    </section>
+  </main>
+
+  <dialog id="details">
+    <button class="dialog-close" aria-label="关闭" type="button">×</button>
+    <div id="details-content"></div>
+  </dialog>
+
+  <footer>
+    <span>价格与评价对应视频发布时的体验，不代表当前情况。</span>
+    <a href="https://space.bilibili.com/9433848/upload/video" target="_blank" rel="noreferrer">查看博主主页</a>
+  </footer>
+
+  <script src="./config.js"></script>
+  <script type="module" src="./assets/app.js"></script>
+</body>
+</html>
