@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12",
+  "generatedAt": "2026-06-13",
   "source": "https://space.bilibili.com/9433848/upload/video",
   "restaurants": [
     {
@@ -37,6 +37,42 @@
       "latitude": null,
       "verificationStatus": "简介与视频口播已复核",
       "updatedAt": "2026-06-12"
+    },
+    {
+      "id": "amei-quanzhou-mianxianhu",
+      "name": "阿美泉州面线糊",
+      "branch": "瑜樾东方店",
+      "address": "武汉市光谷街瑜樾东方1层1-116号",
+      "district": "洪山区",
+      "cuisine": "闽南小吃",
+      "pricePerPerson": 36,
+      "rating": "recommended",
+      "review": "面线糊又香又滑，浇头选择丰富且多数表现出色，整体基本不踩雷；本次猪肺口感偏老。面线糊5元起且可续，浇头另计。",
+      "recommendedDishes": ["面线糊", "粉肠", "五香卷", "芋泥卷"],
+      "visitDate": "2024-12-26",
+      "videoUrl": "https://www.bilibili.com/video/BV1uaCaYWEGu",
+      "longitude": null,
+      "latitude": null,
+      "verificationStatus": "简介与视频口播已复核",
+      "updatedAt": "2026-06-13"
+    },
+    {
+      "id": "le-jardin-1911",
+      "name": "乐花园LeJardin法式主题餐厅",
+      "branch": "大武汉1911店",
+      "address": "武汉市江汉区新华路大武汉1911风情街B栋",
+      "district": "江汉区",
+      "cuisine": "法餐",
+      "pricePerPerson": 240,
+      "rating": "recommended",
+      "review": "双人套餐332元，份量充足；另点法式青口148元，本次两人合计约480元。菲力牛排、鹅肝和海鲜烩饭评价突出，整体被明确推荐。周一、周二休息，注意避免跑空。",
+      "recommendedDishes": ["菲力牛排", "鹅肝", "法式青口", "西班牙海鲜烩饭"],
+      "visitDate": "2024-11-15",
+      "videoUrl": "https://www.bilibili.com/video/BV1esmSYdEmL",
+      "longitude": null,
+      "latitude": null,
+      "verificationStatus": "简介与视频口播已复核",
+      "updatedAt": "2026-06-13"
     }
   ]
 }
