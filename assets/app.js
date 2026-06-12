@@ -78,7 +78,7 @@ function loadAmap() {
   window._AMapSecurityConfig = { securityJsCode: config.amapSecurityCode || "" };
   return new Promise((resolve, reject) => {
     const script = document.createElement("script");
-    script.src = `https://webapi.amap.com/maps?v=2.0&key=${encodeURIComponent(config.amapKey)}&plugin=AMap.MarkerCluster`;
+    script.src = `https://webapi.amap.com/maps?v=2.0&key=${encodeURIComponent(config.amapKey)}`;
     script.onload = () => resolve(true);
     script.onerror = () => reject(new Error("高德地图加载失败"));
     document.head.append(script);
@@ -95,12 +95,16 @@ function renderMarkers() {
   state.map.clearMap();
   const valid = state.filtered.filter((item) => Number.isFinite(item.longitude) && Number.isFinite(item.latitude));
   state.markers = valid.map((item) => {
-    const marker = new AMap.Marker({ position: [item.longitude, item.latitude], title: item.name });
+    const marker = new AMap.Marker({
+      map: state.map,
+      position: [item.longitude, item.latitude],
+      title: item.name,
+      label: { content: item.name, direction: "top" },
+    });
     marker.on("click", () => showDetails(item.id));
     return marker;
   });
   if (state.markers.length) {
-    new AMap.MarkerCluster(state.map, state.markers, { gridSize: 60 });
     state.map.setFitView(state.markers, false, [50, 50, 50, 50], 15);
   }
 }
