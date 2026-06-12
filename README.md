@@ -27,6 +27,13 @@ python scripts/collect_bilibili.py --cookies-from-browser chrome
 
 默认每次最多新增 20 条，重复执行即可断点续传并降低触发 B 站风控的概率；可用 `--batch-size 5` 调小批次。如果 B 站未触发访问限制，可省略浏览器参数。采集器不会自动发布猜测内容；请在 `data/review_queue.csv` 中筛选武汉探店，再将已核实餐厅写入 `data/restaurants.json`。字段说明见 `docs/data-schema.md`。
 
+没有公开字幕的视频可以在本地转写，结果只用于人工整理，不提交到仓库：
+
+```powershell
+python -m pip install --user faster-whisper
+python scripts/transcribe_video.py BV1APES6bErr
+```
+
 验证并导出数据：
 
 ```powershell
