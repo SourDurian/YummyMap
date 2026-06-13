@@ -45,6 +45,28 @@
     </aside>
 
     <section class="map-panel">
+      <section class="place-search" aria-label="搜索附近餐厅">
+        <form id="place-search-form" class="place-search-form">
+          <label class="place-search-input">
+            <span>选择附近中心</span>
+            <input id="place-search-input" type="search" placeholder="搜索武汉地点，如积玉桥地铁站" autocomplete="off">
+          </label>
+          <label class="radius-select">
+            <span>范围</span>
+            <select id="nearby-radius">
+              <option value="1000">1 公里</option>
+              <option value="3000" selected>3 公里</option>
+              <option value="5000">5 公里</option>
+              <option value="10000">10 公里</option>
+            </select>
+          </label>
+          <button class="place-search-button" type="submit">搜索</button>
+        </form>
+        <div class="nearby-summary">
+          <span id="nearby-status">也可以直接点击地图选定中心点</span>
+          <button id="clear-nearby" class="nearby-clear" type="button" hidden>清除附近</button>
+        </div>
+      </section>
       <div id="map" aria-label="餐厅探店地图"></div>
       <div id="map-message" class="map-message" hidden></div>
       <button id="mobile-toggle" class="mobile-toggle" type="button">查看列表</button>

@@ -21,6 +21,9 @@ source does not state a fact. Never invent addresses, prices, dishes, or opinion
 Return [] when the video is not a Wuhan restaurant visit."""
 
 DISTRICTS = "江岸区|江汉区|硚口区|汉阳区|武昌区|青山区|洪山区|东西湖区|汉南区|蔡甸区|江夏区|黄陂区|新洲区"
+WUHAN_DISTRICTS = set(DISTRICTS.split("|"))
+WUHAN_LON_RANGE = (113.65, 115.10)
+WUHAN_LAT_RANGE = (29.95, 31.40)
 CUISINES = [
     ("川菜", "川菜"), ("火锅", "火锅"), ("烤肉", "烤肉"), ("烧烤", "烧烤"),
     ("江西", "江西菜"), ("南洋", "南洋菜"), ("猪排", "日式简餐"),
@@ -28,6 +31,30 @@ CUISINES = [
     ("面线糊", "闽南小吃"), ("海鲜", "海鲜"), ("新疆", "新疆菜"),
     ("烧腊", "粤式烧腊"), ("馄饨", "中式小吃"), ("西餐", "西餐"),
 ]
+
+COMMENTARY_CUES = (
+    "这家", "老板", "出餐", "建议", "推荐", "不推荐", "味道", "口感",
+    "环境", "服务", "等了", "等待", "排队", "现点现做", "提前预约", "地图上",
+    "搬家", "别白跑", "停业", "暂停营业", "歇业", "已关", "关门", "更名",
+    "改名", "地址变更", "迁址", "新址", "售罄", "装修",
+)
+
+def split_name_commentary(value):
+    """Keep descriptive prose out of map marker titles."""
+    value = (value or "").strip()
+    trailing_group = re.search(r"(?:\(([^()]*)\)|（([^（）]*)）)\s*$", value)
+    if trailing_group:
+        commentary = (trailing_group.group(1) or trailing_group.group(2) or "").strip()
+        if commentary and any(cue in commentary for cue in COMMENTARY_CUES):
+            return value[:trailing_group.start()].strip(), commentary
+    match = re.search(r"[，,；;。！？!?]", value)
+    if not match:
+        return value, ""
+    name = value[:match.start()].strip()
+    commentary = value[match.end():].strip()
+    if len(name) >= 2 and commentary and any(cue in commentary for cue in COMMENTARY_CUES):
+        return name, commentary
+    return value, ""
 
 def clean_segment(value):
     return re.sub(r"^\s*\d+\s*[：:、，,.]\s*", "", value).strip(" -；;")
@@ -49,6 +76,19 @@ def address_region(address):
     city = re.search(r"([^省市区县]{2,8}市)", address)
     district = re.search(r"([^省市区县]{1,8}(?:区|县))", address)
     return (district.group(1) if district else city.group(1) if city else "")
+
+def is_wuhan_restaurant(item):
+    address = item.get("address") or ""
+    district = item.get("district") or address_region(address)
+    if "武汉市" in address or district in WUHAN_DISTRICTS:
+        return True
+    longitude, latitude = item.get("longitude"), item.get("latitude")
+    return (
+        isinstance(longitude, (int, float))
+        and isinstance(latitude, (int, float))
+        and WUHAN_LON_RANGE[0] <= longitude <= WUHAN_LON_RANGE[1]
+        and WUHAN_LAT_RANGE[0] <= latitude <= WUHAN_LAT_RANGE[1]
+    )
 
 def split_places(description, title):
     places = []
@@ -72,10 +112,11 @@ def split_places(description, title):
         address = normalize_address(address, title)
         name = re.sub(r"[（(]?我复制的[）)]?", "", name)
         name = re.sub(r"\s*#.*$", "", name).strip()
+        name, name_commentary = split_name_commentary(name)
         if name in {"导航至", "地址", "地址导航", "导航", "店名"}:
             continue
         if name and address and not re.search(r"[：:]", name + address):
-            places.append((name, address, address_region(address)))
+            places.append((name, address, address_region(address), name_commentary))
     return places
 
 def heuristic_extract(row):
@@ -99,7 +140,7 @@ def heuristic_extract(row):
             for part in re.split(r"[、，及]", recommendation.group(1))
         ]
         dishes = [dish for dish in dishes if 1 < len(dish) <= 18][:8]
-    review = summary or f"视频《{title}》中提及该店；B站未提供AI摘要，具体评价待整理。"
+    fallback_review = summary or f"视频《{title}》中提及该店；B站未提供AI摘要，具体评价待整理。"
     return [{
         "name": name,
         "branch": "",
@@ -108,9 +149,9 @@ def heuristic_extract(row):
         "cuisine": cuisine,
         "pricePerPerson": int(per_person.group(1)) if per_person else None,
         "rating": rating,
-        "review": review,
+        "review": f"{name_commentary}。{fallback_review}" if name_commentary else fallback_review,
         "recommendedDishes": dishes,
-    } for name, address, district in places]
+    } for name, address, district, name_commentary in places]
 
 def signature(item):
     compact = lambda value: re.sub(r"[^0-9A-Za-z\u4e00-\u9fff]", "", value or "").lower()
@@ -155,7 +196,13 @@ def main():
     restaurants = []
     for item in payload.get("restaurants", []):
         item["name"] = re.sub(r"\s*#.*$", "", item.get("name") or "").strip()
+        item["name"], name_commentary = split_name_commentary(item["name"])
+        if name_commentary and name_commentary not in (item.get("review") or ""):
+            existing_review = (item.get("review") or "").strip()
+            item["review"] = f"{name_commentary}。{existing_review}" if existing_review else name_commentary
         if item.get("name") in invalid_names or re.search(r"[：:]", item.get("address") or ""):
+            continue
+        if not is_wuhan_restaurant(item):
             continue
         restaurants.append(item)
     deduped, seen_ids = [], set()
@@ -182,7 +229,13 @@ def main():
         ])
         extracted = heuristic_extract(row) if args.heuristic else call_llm(source)
         for index, item in enumerate(extracted):
+            item["name"], name_commentary = split_name_commentary(item.get("name"))
+            if name_commentary and name_commentary not in (item.get("review") or ""):
+                existing_review = (item.get("review") or "").strip()
+                item["review"] = f"{name_commentary}。{existing_review}" if existing_review else name_commentary
             if not item.get("name") or not item.get("address"):
+                continue
+            if not is_wuhan_restaurant(item):
                 continue
             candidate_id = record_id(row["bvid"], index)
             item_signature = signature(item)

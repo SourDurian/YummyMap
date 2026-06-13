@@ -1438,14 +1438,14 @@
         ]
       },
       "properties": {
-        "name": "驴肉火烧·大姑手工水饺(光霞店)（搬家中……别白跑一趟）",
+        "name": "驴肉火烧·大姑手工水饺(光霞店)",
         "branch": "",
         "address": "洪山区张家湾波光霞影B区76号一楼商铺",
         "district": "洪山区",
         "cuisine": "火锅",
         "pricePerPerson": null,
         "rating": "recommended",
-        "review": "员外探访白沙洲一家低调京味小店，重点推荐京酱肉丝（28元，酱香浓郁、甜而不腻）、炒饼（18元，焦香筋道）、茴香苗炒蛋（28元，清香爽口）及驴肉火锅（68元，肉质劲道）。店内服务周到，菜品分量足且搭配丰富，整体体验温暖满足，适合冬季聚餐。",
+        "review": "搬家中，别白跑一趟。员外探访白沙洲一家低调京味小店，重点推荐京酱肉丝（28元，酱香浓郁、甜而不腻）、炒饼（18元，焦香筋道）、茴香苗炒蛋（28元，清香爽口）及驴肉火锅（68元，肉质劲道）。店内服务周到，菜品分量足且搭配丰富，整体体验温暖满足，适合冬季聚餐。",
         "recommendedDishes": [
           "京酱肉丝（28元",
           "酱香浓郁",
@@ -1527,112 +1527,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          116.638069,
-          23.676301
-        ]
-      },
-      "properties": {
-        "name": "昭弟肠粉·蒸蟹皇面",
-        "branch": "",
-        "address": "湘桥区西荣路宫后桥6号之6",
-        "district": "湘桥区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "员外在潮州18小时内探访四家特色美食：早肠粉（蛋皮包白菜、酱汁清爽）、蟹黄面（蒸制Q弹）、鱼饭（无损鱼鲜美无腥）、鹧鸪粥（现杀现熬，肉质软糯）。涵盖肠粉、鱼饭、炒菜及宵夜，展现潮州食材丰富与烹饪技艺，强调当地饮食文化独特与令人难忘的味觉体验。",
-        "recommendedDishes": [],
-        "id": "bv1ekrqbueit-1",
-        "visitDate": "2026-01-13",
-        "videoUrl": "https://www.bilibili.com/video/BV1EKrqBuEit",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.659323,
-          23.682512
-        ]
-      },
-      "properties": {
-        "name": "枫春三友水产",
-        "branch": "",
-        "address": "湘桥区枫春南路40号潮州枫春市场2019-2022档口",
-        "district": "湘桥区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "员外在潮州18小时内探访四家特色美食：早肠粉（蛋皮包白菜、酱汁清爽）、蟹黄面（蒸制Q弹）、鱼饭（无损鱼鲜美无腥）、鹧鸪粥（现杀现熬，肉质软糯）。涵盖肠粉、鱼饭、炒菜及宵夜，展现潮州食材丰富与烹饪技艺，强调当地饮食文化独特与令人难忘的味觉体验。",
-        "recommendedDishes": [],
-        "id": "bv1ekrqbueit-2",
-        "visitDate": "2026-01-13",
-        "videoUrl": "https://www.bilibili.com/video/BV1EKrqBuEit",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.631372,
-          23.644188
-        ]
-      },
-      "properties": {
-        "name": "厦寺老二小炒(腾瑞海悦名庭店)",
-        "branch": "",
-        "address": "湘桥区海悦名庭10号",
-        "district": "湘桥区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "员外在潮州18小时内探访四家特色美食：早肠粉（蛋皮包白菜、酱汁清爽）、蟹黄面（蒸制Q弹）、鱼饭（无损鱼鲜美无腥）、鹧鸪粥（现杀现熬，肉质软糯）。涵盖肠粉、鱼饭、炒菜及宵夜，展现潮州食材丰富与烹饪技艺，强调当地饮食文化独特与令人难忘的味觉体验。",
-        "recommendedDishes": [],
-        "id": "bv1ekrqbueit-3",
-        "visitDate": "2026-01-13",
-        "videoUrl": "https://www.bilibili.com/video/BV1EKrqBuEit",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.637468,
-          23.657713
-        ]
-      },
-      "properties": {
-        "name": "宏记砂锅粥(建兴街店)",
-        "branch": "",
-        "address": "湘桥区西新街道建兴街愉景居1号(即建安花园后门斜对面)",
-        "district": "湘桥区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "员外在潮州18小时内探访四家特色美食：早肠粉（蛋皮包白菜、酱汁清爽）、蟹黄面（蒸制Q弹）、鱼饭（无损鱼鲜美无腥）、鹧鸪粥（现杀现熬，肉质软糯）。涵盖肠粉、鱼饭、炒菜及宵夜，展现潮州食材丰富与烹饪技艺，强调当地饮食文化独特与令人难忘的味觉体验。",
-        "recommendedDishes": [],
-        "id": "bv1ekrqbueit-4",
-        "visitDate": "2026-01-13",
-        "videoUrl": "https://www.bilibili.com/video/BV1EKrqBuEit",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.205541,
-          30.543873
+          114.20778,
+          30.547856
         ]
       },
       "properties": {
@@ -1657,7 +1553,7 @@
         "id": "bv1tjrgbyeap-1",
         "visitDate": "2026-01-10",
         "videoUrl": "https://www.bilibili.com/video/BV1tJrgByEAp",
-        "verificationStatus": "AI摘要自动提取，待抽查",
+        "verificationStatus": "AI摘要自动提取；坐标经地址与外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     },
@@ -1921,8 +1817,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.350534,
-          30.589409
+          114.409579,
+          30.490759
         ]
       },
       "properties": {
@@ -1940,7 +1836,7 @@
         "id": "bv1tkq3bbeum-1",
         "visitDate": "2025-12-17",
         "videoUrl": "https://www.bilibili.com/video/BV1tKq3BBEUm",
-        "verificationStatus": "AI摘要自动提取，待抽查",
+        "verificationStatus": "AI摘要自动提取；坐标经地址与外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     },
@@ -2581,8 +2477,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.419672,
-          30.500583
+          114.324256,
+          30.509286
         ]
       },
       "properties": {
@@ -2598,7 +2494,7 @@
         "id": "bv1zyyybtecq-1",
         "visitDate": "2025-10-29",
         "videoUrl": "https://www.bilibili.com/video/BV1zyyyBTECq",
-        "verificationStatus": "AI摘要自动提取，待抽查",
+        "verificationStatus": "AI摘要自动提取；坐标经地址与外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     },
@@ -2750,8 +2646,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.293376,
-          30.588228
+          114.312252,
+          30.649511
         ]
       },
       "properties": {
@@ -2767,7 +2663,7 @@
         "id": "bv1ghnzzpept-1",
         "visitDate": "2025-10-13",
         "videoUrl": "https://www.bilibili.com/video/BV1GHnzzPEPt",
-        "verificationStatus": "AI摘要自动提取，待抽查",
+        "verificationStatus": "AI摘要自动提取；坐标经地址与外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     },
@@ -3001,84 +2897,6 @@
         "id": "bv1h8nyzeeyu-1",
         "visitDate": "2025-09-26",
         "videoUrl": "https://www.bilibili.com/video/BV1H8nYzeEyU",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.851634,
-          31.260335
-        ]
-      },
-      "properties": {
-        "name": "焦敏菜饭(丁山店)",
-        "branch": "",
-        "address": "宜兴市紫砂路与东贤中路交叉口东50米路北",
-        "district": "宜兴市",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《在外地的宜兴人脑子里装的三大美食》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1bonhzje5h-1",
-        "visitDate": "2025-09-25",
-        "videoUrl": "https://www.bilibili.com/video/BV1bonHzjE5h",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.829856,
-          31.365692
-        ]
-      },
-      "properties": {
-        "name": "老头子美食炸串",
-        "branch": "",
-        "address": "宜兴市解放路宜城街道东虹路80号",
-        "district": "宜兴市",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《在外地的宜兴人脑子里装的三大美食》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1bonhzje5h-2",
-        "visitDate": "2025-09-25",
-        "videoUrl": "https://www.bilibili.com/video/BV1bonHzjE5h",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.824043,
-          31.364496
-        ]
-      },
-      "properties": {
-        "name": "匡记面馆(仓屋里店)",
-        "branch": "",
-        "address": "宜兴市解放东路仓屋里一幢8-9号",
-        "district": "宜兴市",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《在外地的宜兴人脑子里装的三大美食》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1bonhzje5h-3",
-        "visitDate": "2025-09-25",
-        "videoUrl": "https://www.bilibili.com/video/BV1bonHzjE5h",
         "verificationStatus": "AI摘要自动提取，待抽查",
         "updatedAt": "2026-06-13"
       }
@@ -3322,8 +3140,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.354969,
-          30.588162
+          114.367229,
+          30.585061
         ]
       },
       "properties": {
@@ -3339,7 +3157,7 @@
         "id": "bv1etahzxexv-1",
         "visitDate": "2025-09-02",
         "videoUrl": "https://www.bilibili.com/video/BV1EtaHzxExv",
-        "verificationStatus": "AI摘要自动提取，待抽查",
+        "verificationStatus": "AI摘要自动提取；坐标经地址与外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     },
@@ -3365,32 +3183,6 @@
         "id": "bv18mhbz9eab-1",
         "visitDate": "2025-08-31",
         "videoUrl": "https://www.bilibili.com/video/BV18mhBz9EAB",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          112.202615,
-          31.027412
-        ]
-      },
-      "properties": {
-        "name": "隔板肉老店",
-        "branch": "",
-        "address": "荆门市东宝区工商街18号竹皮河门面",
-        "district": "东宝区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《荆门一家吃隔板肉的老店，挺有特色》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1mhhuz5e7j-1",
-        "visitDate": "2025-08-29",
-        "videoUrl": "https://www.bilibili.com/video/BV1mhhUz5E7J",
         "verificationStatus": "AI摘要自动提取，待抽查",
         "updatedAt": "2026-06-13"
       }
@@ -3951,14 +3743,14 @@
         ]
       },
       "properties": {
-        "name": "一波寿司(汉口城市广场E区店)，这家店现点现做，出餐慢，建议提前预约，为这么个东西等半小时我就不推荐了",
+        "name": "一波寿司(汉口城市广场E区店)",
         "branch": "",
         "address": "江岸区汉口城市广场E区1楼81号",
         "district": "江岸区",
         "cuisine": "其他",
         "pricePerPerson": null,
         "rating": "unknown",
-        "review": "视频《武汉一家吃寿司的小店，我不理解》中提及该店；B站未提供AI摘要，具体评价待整理。",
+        "review": "这家店现点现做，出餐慢，建议提前预约；为此等待半小时，视频作者不推荐。",
         "recommendedDishes": [],
         "id": "bv1sjuvzhe3d-1",
         "visitDate": "2025-07-12",
@@ -3998,8 +3790,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.284732,
-          30.585325
+          114.280537,
+          30.583937
         ]
       },
       "properties": {
@@ -4015,7 +3807,7 @@
         "id": "bv1tw3ozwedq-1",
         "visitDate": "2025-07-06",
         "videoUrl": "https://www.bilibili.com/video/BV1tW3ozWEdq",
-        "verificationStatus": "AI摘要自动提取，待抽查",
+        "verificationStatus": "AI摘要自动提取；坐标经地址与外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     },
@@ -4419,14 +4211,14 @@
         ]
       },
       "properties": {
-        "name": "海米小吃(中华路店)，地图上搜索名字叫温州瘦肉丸",
+        "name": "海米小吃(中华路店)",
         "branch": "",
         "address": "武汉市武昌区中华路82号附2号",
         "district": "武昌区",
         "cuisine": "其他",
         "pricePerPerson": null,
         "rating": "unknown",
-        "review": "视频《武汉一家藏在小区里的福建小吃店，蛮好吃》中提及该店；B站未提供AI摘要，具体评价待整理。",
+        "review": "地图上可使用“温州瘦肉丸”搜索该店。视频《武汉一家藏在小区里的福建小吃店，蛮好吃》中提及该店；具体评价待整理。",
         "recommendedDishes": [],
         "id": "bv14l7yzae3f-1",
         "visitDate": "2025-06-04",
@@ -4457,32 +4249,6 @@
         "id": "bv1ld7cz1ehm-1",
         "visitDate": "2025-06-02",
         "videoUrl": "https://www.bilibili.com/video/BV1Ld7Cz1Ehm",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          112.779809,
-          30.456238
-        ]
-      },
-      "properties": {
-        "name": "五七老爽油焖大虾",
-        "branch": "",
-        "address": "潜江市周矶街道五七大道s312号附近",
-        "district": "潜江市",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《潜江吃虾，真的是老爽了，柠檬泡虾真好吃啊》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1sp7szbect-1",
-        "visitDate": "2025-05-31",
-        "videoUrl": "https://www.bilibili.com/video/BV1sP7szBEcT",
         "verificationStatus": "AI摘要自动提取，待抽查",
         "updatedAt": "2026-06-13"
       }
@@ -5038,32 +4804,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.881086,
-          36.037136
-        ]
-      },
-      "properties": {
-        "name": "德元纯汤牛肉面(二热总店)",
-        "branch": "",
-        "address": "兰州城关区嘉峪关西路6、8号01层003室",
-        "district": "兰州城关区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《兰州牛肉面，跟兰州拉面区别真大》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1i8lzzfesb-1",
-        "visitDate": "2025-05-06",
-        "videoUrl": "https://www.bilibili.com/video/BV1i8LzzFEsb",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           114.286141,
           30.594554
         ]
@@ -5116,32 +4856,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.837045,
-          36.094645
-        ]
-      },
-      "properties": {
-        "name": "茂晖牦牛退骨肉",
-        "branch": "",
-        "address": "兰州城关区左家湾106号",
-        "district": "兰州城关区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《兰州一家吃牦牛肉的小店，肉香味美超好吃》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1eelzz4e5x-1",
-        "visitDate": "2025-04-30",
-        "videoUrl": "https://www.bilibili.com/video/BV1eeLzz4E5X",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           114.401541,
           30.481381
         ]
@@ -5159,32 +4873,6 @@
         "id": "bv1rwl6zmehd-1",
         "visitDate": "2025-04-28",
         "videoUrl": "https://www.bilibili.com/video/BV1rwL6zMEhd",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.854474,
-          36.077425
-        ]
-      },
-      "properties": {
-        "name": "武胜驿龙记原汤羊杂店",
-        "branch": "",
-        "address": "甘肃省兰州市城关区盐场路122号",
-        "district": "城关区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《兰州一家羊杂碎小店，便宜好吃，生意非常好》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1delhzcej9-1",
-        "visitDate": "2025-04-26",
-        "videoUrl": "https://www.bilibili.com/video/BV1dELHzCEJ9",
         "verificationStatus": "AI摘要自动提取，待抽查",
         "updatedAt": "2026-06-13"
       }
@@ -5714,8 +5402,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.299093,
-          30.647627
+          114.30622,
+          30.651205
         ]
       },
       "properties": {
@@ -5731,7 +5419,7 @@
         "id": "bv1dvqyyuemy-1",
         "visitDate": "2025-03-17",
         "videoUrl": "https://www.bilibili.com/video/BV1DvQYYUEmY",
-        "verificationStatus": "AI摘要自动提取，待抽查",
+        "verificationStatus": "AI摘要自动提取；坐标经地址与外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     },
@@ -5913,32 +5601,6 @@
         "id": "bv1ex9ay9egc-1",
         "visitDate": "2025-03-03",
         "videoUrl": "https://www.bilibili.com/video/BV1ex9aY9Egc",
-        "verificationStatus": "AI摘要自动提取，待抽查",
-        "updatedAt": "2026-06-13"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.331603,
-          31.579341
-        ]
-      },
-      "properties": {
-        "name": "小乐荟私房菜(宁海里店)",
-        "branch": "",
-        "address": "梁溪区江海路宁海段19号",
-        "district": "梁溪区",
-        "cuisine": "其他",
-        "pricePerPerson": null,
-        "rating": "unknown",
-        "review": "视频《无锡一家吃吊鸡露的馆子，鸡汤鲜美，小肠嫩滑，真的好吃》中提及该店；B站未提供AI摘要，具体评价待整理。",
-        "recommendedDishes": [],
-        "id": "bv1o9xdyzefp-1",
-        "visitDate": "2025-03-02",
-        "videoUrl": "https://www.bilibili.com/video/BV1o9XdYZEFp",
         "verificationStatus": "AI摘要自动提取，待抽查",
         "updatedAt": "2026-06-13"
       }
@@ -7872,15 +7534,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          114.295675,
-          30.600075
+          114.30891,
+          30.603686
         ]
       },
       "properties": {
         "name": "浩克肉铺",
         "branch": "",
-        "address": "武汉市湖北武汉沈阳路",
-        "district": "武汉市",
+        "address": "武汉市江岸区沈阳路1附4号",
+        "district": "江岸区",
         "cuisine": "其他",
         "pricePerPerson": null,
         "rating": "unknown",
@@ -7889,7 +7551,7 @@
         "id": "bv1ydtmehepk-1",
         "visitDate": "2024-09-22",
         "videoUrl": "https://www.bilibili.com/video/BV1YDtmeHEPK",
-        "verificationStatus": "AI摘要自动提取，待抽查",
+        "verificationStatus": "AI摘要自动提取；地址与坐标经外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     },
@@ -8429,6 +8091,84 @@
         "visitDate": "2024-10-02",
         "videoUrl": "https://www.bilibili.com/video/BV1dA4TeMEJ9",
         "verificationStatus": "AI摘要自动提取，待抽查",
+        "updatedAt": "2026-06-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.289612,
+          30.583798
+        ]
+      },
+      "properties": {
+        "id": "external-amei-de-niu",
+        "name": "阿梅的牛",
+        "branch": "",
+        "address": "武汉市江岸区大智街道慈德里小区金业里小区",
+        "district": "江岸区",
+        "cuisine": "牛肉料理",
+        "pricePerPerson": null,
+        "rating": "unknown",
+        "review": "参考另一位整理者截至2026年2月14日的公开地图补录；原探店视频和具体评价待确认。",
+        "recommendedDishes": [],
+        "visitDate": null,
+        "videoUrl": "https://map.dingtuyi.com/share/view?id=698f48d2fd465207723e5aeb",
+        "verificationStatus": "外部地图交叉补录，原视频待确认",
+        "updatedAt": "2026-06-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.309204,
+          30.622856
+        ]
+      },
+      "properties": {
+        "id": "external-shaanxi-shouganmian-gongnongbinglu",
+        "name": "陕西手擀面(工农兵路店)",
+        "branch": "",
+        "address": "武汉市江岸区工农兵路东立国际附近",
+        "district": "江岸区",
+        "cuisine": "陕西面食",
+        "pricePerPerson": null,
+        "rating": "unknown",
+        "review": "参考另一位整理者截至2026年2月14日的公开地图补录；原探店视频和具体评价待确认。",
+        "recommendedDishes": [],
+        "visitDate": null,
+        "videoUrl": "https://map.dingtuyi.com/share/view?id=698f48d2fd465207723e5aeb",
+        "verificationStatus": "外部地图交叉补录，原视频待确认",
+        "updatedAt": "2026-06-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.285757,
+          30.586517
+        ]
+      },
+      "properties": {
+        "id": "bv1mr49efedq-1",
+        "name": "越南美食",
+        "branch": "",
+        "address": "武汉市江岸区循礼门地铁站E口步行约150米，安静社区红艳村附近",
+        "district": "江岸区",
+        "cuisine": "越南小吃",
+        "pricePerPerson": null,
+        "rating": "unknown",
+        "review": "视频《武汉这家超绝宝藏越南小吃店，老板一顿饭的时间被骂五顿》中提及该店；具体评价待整理。",
+        "recommendedDishes": [],
+        "visitDate": "2024-09-16",
+        "videoUrl": "https://www.bilibili.com/video/BV1Mr49efEDq",
+        "verificationStatus": "视频简介与外部地图交叉复核",
         "updatedAt": "2026-06-13"
       }
     }
